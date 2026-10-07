@@ -288,6 +288,36 @@ footer.site .legal{padding-block:24px;font-size:.72rem;line-height:1.6;display:g
 
 .wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .wa-float svg{width:28px;height:28px;fill:#fff}
+/* ---------- Leitura no celular ----------
+   A serifada de alto contraste fica fina demais em tela pequena.
+   No celular os títulos passam para a sans da marca (a mesma do logo),
+   o texto corrido cresce e os rótulos ficam maiores e menos espaçados. */
+@media (max-width:700px){
+  body{font-size:17px;line-height:1.7}
+  h1,h2,h3,
+  .about .kicker,.story blockquote p,.fmt h3,.stats strong,.req-nums strong,.path li::before,.pillar .ico{font-family:var(--sans)}
+  h1,h2,h3{font-weight:700;letter-spacing:-.015em;line-height:1.15}
+  h1 em,h2 em,h3 em,.hero h1 em,.about h2 em,.story h2 em,.sec-head h2 em,.final h2 em{font-style:normal;text-shadow:none}
+  .story .bg::after{background:rgba(20,17,18,.8)}
+  .hero h1{font-size:2.15rem}
+  .about h2,.sec-head h2,.faq h2,.story h2,.final h2{font-size:1.85rem}
+  .form-card h2{font-size:1.45rem}
+  .pillar h3,.path h3{font-size:1.2rem}
+  .fmt h3{font-size:1.6rem}
+  .about .kicker{font-style:normal;font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .story blockquote p{font-size:1.05rem;line-height:1.6;font-weight:500}
+  .stats strong{font-weight:700;font-size:2.1rem}
+  .req-nums strong{font-weight:700;font-size:1.7rem}
+  .eyebrow,.stats span,.req-nums span,.steps-ind,.field label,.btn,.tags span,.car-count,.contact-list span,footer.site h4,.slide figcaption,.fmt .area,.fmt .tag{letter-spacing:.08em}
+  .eyebrow{font-size:.78rem}
+  .stats span,.req-nums span,.fmt .tag,.slide figcaption{font-size:.74rem}
+  .field label{font-size:.76rem}
+  .prose,.pillar p,.faq details p,.fmt dl div{color:var(--ink)}
+  .pillar ul,.path p,.fmt p,.car-note,.sec-head p,.hero .sub,.form-card .lead,.consent,.fine,.about figure figcaption{font-size:.95rem}
+  .path p,.pillar ul,.sec-head p,.car-note,.form-card .lead,.fmt p,.consent{color:#4a4145}
+  .util{font-size:.7rem}
+  .products li span{font-size:.68rem;letter-spacing:.06em}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -296,7 +326,7 @@ footer.site .legal{padding-block:24px;font-size:.72rem;line-height:1.6;display:g
 <div class="util">
   <div class="wrap">
     <a href="#faq">Perguntas frequentes</a>
-    <a href="https://www.thehairbar.com.br" target="_blank" rel="noopener">Quero fazer uma escova</a>
+    <a href="https://www.instagram.com/thehairbar.aju/?hl=pt" target="_blank" rel="noopener">Quero fazer uma escova</a>
   </div>
 </div>
 
